@@ -10,7 +10,12 @@
 		enable = true;
 		systemd.enable = true;
 		settings = [{
-			modules-right = ["cpu"];
+			height = 24;
+			spacing = 4;
+
+			modules-left = ["hyprland/workspaces"];
+			modules-center = ["hyprland/window"];
+			modules-right = ["hyprland/language" "cpu" "clock" "tray"];
 		}];
 	};
 }
