@@ -1,0 +1,16 @@
+{
+	lib,
+	config,
+	pkgs,
+	...
+}:
+
+{
+	programs.waybar = {
+		enable = true;
+		systemd.enable = true;
+		settings = [{
+			modules-right = ["cpu"];
+		}];
+	};
+}
