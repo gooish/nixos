@@ -89,7 +89,9 @@
     rofi
     killall
     git
+    rose-pine-hyprcursor
   ];
+
   
   programs.hyprland = {
     enable = true;
