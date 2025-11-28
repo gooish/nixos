@@ -5,7 +5,7 @@
 	imports = [
 		./home/waybar.nix
 		./home/hyprland.nix
-		./home/hyprpaper.nix
+		# ./home/hyprpaper.nix
 	];
 
 	home.username = "elli";
@@ -36,6 +36,8 @@
 		usbutils
 		
 		vscode
+
+		swaybg
 	];
 
 	

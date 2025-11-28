@@ -26,7 +26,7 @@
 			################
 
 			# See https://wiki.hypr.land/Configuring/Monitors/
-			monitor = ",1920x1080,auto,1";
+			monitor = ["HDMI-A-1, 2560x1440,0x-1440,1" "DP-2, 2560x1440, 0x0, 1" "DP-1, 2560x1440, 2560x0, 1, transform, 1"];
 
 
 			###################
@@ -55,6 +55,9 @@
 			#   "waybar & hyprpaper & firefox"
 			# ];
 
+			"exec-once" = [
+				"swaybg -i /home/elli/.nixos/resources/cats.png -m center -c e1ddd2"
+			];
 
 			#############################
 			### ENVIRONMENT VARIABLES ###
@@ -201,8 +204,8 @@
 
 			# https://wiki.hypr.land/Configuring/Variables/#misc
 			misc = {
-				force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers
-				disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
+				force_default_wallpaper = 1; # Set to 0 or 1 to disable the anime mascot wallpapers
+				disable_hyprland_logo = true; # If true disables the random hyprland logo / anime girl background. :(
 			};
 
 
@@ -257,6 +260,8 @@
 				"$mainMod, D, exec, $menu"
 				"$mainMod, P, pseudo," # dwindle
 				"$mainMod, J, togglesplit," # dwindle
+
+				"$mainMod, F, exec, firefox"
 
 				"$mainMod, h, layoutmsg, preselect d"
 				"$mainMod, v, layoutmsg, preselect r"

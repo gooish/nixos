@@ -14,7 +14,7 @@
   outputs = inputs@{ nixpkgs, home-manager, ...} : {
 		nixosConfigurations =  {
 			nixpkgs.config.allowUnfree = true;
-			nixos-test = nixpkgs.lib.nixosSystem {
+			ten-of-swords = nixpkgs.lib.nixosSystem {
 				modules = [
 					./configuration.nix
 
