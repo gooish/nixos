@@ -6,9 +6,9 @@
             ipc = "on";
             splash = false;
 
-            preload = ["../resources/wallpaper.jpg"];
+            preload = ["~/.nixos/resources/cats.png"];
 
-            wallpaper = [",../resources/wallpaper.jpg"];
+            wallpaper = [",contain:~/.nixos/resources/cats.png"];
 
         };
     };
