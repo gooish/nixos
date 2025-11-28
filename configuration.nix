@@ -92,6 +92,10 @@
     rose-pine-hyprcursor
   ];
 
+  fonts.packages = with pkgs; 
+  [
+    iosevka
+  ];
   
   programs.hyprland = {
     enable = true;

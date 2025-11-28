@@ -45,6 +45,18 @@
 		settings = {
 			env.term = "xterm-256color";
 			font = {
+				normal = {
+					family = "Iosevka";
+					style = "Regular";
+				};
+				bold = {
+					family = "Iosevka";
+					style = "Bold";
+				};
+				italic = {
+					family = "Iosevka";
+					style = "Italic";
+				};
 				size = 10;
 			};
 			selection.save_to_clipboard = true;
