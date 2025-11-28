@@ -79,6 +79,12 @@ button:hover {
     color: #ffffff;
 }
 
+#workspaces button.empty {
+    padding: 0 5px;
+    background-color: rgba(69, 72, 80, 1);
+    color: #ffffff;
+}
+
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
 }

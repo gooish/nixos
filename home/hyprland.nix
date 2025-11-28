@@ -27,9 +27,10 @@
 
 			# See https://wiki.hypr.land/Configuring/Monitors/
 			monitor = [
-				"HDMI-A-1, 2560x1440,0x-1440,1" 
-				"DP-2, 2560x1440, 0x0, 1" 
-				"DP-1, 2560x1440, 2560x-1120, 1, transform, 1"
+				"HDMI-A-1, 2560x1440,0x0,1" 
+				"DP-2, 2560x1440@120, 0x1440, 1" 
+				"DP-1, 2560x1440, 2560x420, 1, transform, 1"
+				"DP-3, disable"
 			];
 
 
@@ -226,7 +227,7 @@
 				kb_rules = "";
 
 				follow_mouse = 1;
-
+				accel_profile = "flat";
 				sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
 
 				touchpad = {
@@ -270,6 +271,8 @@
 				"$mainMod, h, layoutmsg, preselect d"
 				"$mainMod, v, layoutmsg, preselect r"
 
+				", F4, exec, $menu"
+
 				# Move focus with mainMod + arrow keys
 				"$mainMod, left, movefocus, l"
 				"$mainMod, right, movefocus, r"
@@ -305,8 +308,8 @@
 				"$mainMod SHIFT, S, movetoworkspace, special:magic"
 
 				# Scroll through existing workspaces with mainMod + scroll
-				"$mainMod, mouse_down, workspace, e+1"
-				"$mainMod, mouse_up, workspace, e-1"
+				", mouse:275, workspace, e-1"
+				", mouse:276, workspace, e+1"
 			];
 
 			# Move/resize windows with mainMod + LMB/RMB and dragging
@@ -349,6 +352,18 @@
 
 				# Fix some dragging issues with XWayland
 				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+			];
+
+			workspace = [
+				"1,persistent:true,monitor:HDMI-A-1"
+				"2,persistent:true, monitor:HDMI-A-1"
+				"3,persistent:true, monitor:HDMI-A-1"
+				"4,persistent:true, monitor:DP-2"
+				"5,persistent:true, monitor:DP-2"
+				"6,persistent:true, monitor:DP-2"
+				"7,persistent:true, monitor:DP-1"
+				"8,persistent:true, monitor:DP-1"
+				"9,persistent:true, monitor:DP-1"
 			];
 		};
 	};

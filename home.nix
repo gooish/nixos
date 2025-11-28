@@ -5,6 +5,7 @@
 	imports = [
 		./home/waybar.nix
 		./home/hyprland.nix
+		./home/hyprlock.nix
 		# ./home/hyprpaper.nix
 	];
 
@@ -55,6 +56,11 @@
 		telegram-desktop
 
 		pavucontrol
+
+		solaar
+
+		nwg-displays
+		gamescope
 	];
 
 	
