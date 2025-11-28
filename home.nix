@@ -11,6 +11,18 @@
 	home.username = "elli";
 	home.homeDirectory = "/home/elli";
   
+  	dconf.settings = {
+    	"org/gnome/desktop/interface" = {
+      		color-scheme = "prefer-dark";
+    	};
+    };
+
+	xdg.portal = {
+  		enable = true;
+  		extraPortals = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-wlr ];
+  		configPackages = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-wlr ];
+	};
+	
 	home.packages = with pkgs; [
 		neofetch
 		zip
@@ -38,6 +50,11 @@
 		vscode
 
 		swaybg
+
+		discord
+		telegram-desktop
+
+		pavucontrol
 	];
 
 	

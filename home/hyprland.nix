@@ -26,7 +26,11 @@
 			################
 
 			# See https://wiki.hypr.land/Configuring/Monitors/
-			monitor = ["HDMI-A-1, 2560x1440,0x-1440,1" "DP-2, 2560x1440, 0x0, 1" "DP-1, 2560x1440, 2560x0, 1, transform, 1"];
+			monitor = [
+				"HDMI-A-1, 2560x1440,0x-1440,1" 
+				"DP-2, 2560x1440, 0x0, 1" 
+				"DP-1, 2560x1440, 2560x-1120, 1, transform, 1"
+			];
 
 
 			###################
