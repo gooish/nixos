@@ -10,24 +10,55 @@
 		enable = true;
 		systemd.enable = true;
 		settings = [{
-			height = 24;
+			height = 30;
 			spacing = 4;
 
 			modules-left = ["hyprland/workspaces"];
 			modules-center = ["hyprland/window"];
-			modules-right = ["hyprland/language" "cpu" "clock" "tray"];
+			modules-right = [ "cpu" "clock" "tray"];
 		}];
 		style = ''
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Iosevka, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+
 }
 
+/* color vars */
+
+@define-color background #262626;
+@define-color foreground #A8A8A8;
+
+@define-color black     #303030;
+@define-color lblack     #767676;
+
+@define-color white     #D0D0D0;
+@define-color lwhite    #FFFFFF;
+
+@define-color red     #D370A3;
+@define-color lred    #FFA7DA;
+
+@define-color green     #6D9E3F;
+@define-color lgreen    #A3D572;
+
+@define-color blue     #6095C5;
+@define-color lblue    #98CBFE;
+
+@define-color yellow     #B58858;
+@define-color lyellow    #EFBD8B;
+
+@define-color cyan     #3BA275;
+@define-color lcyan    #75DAA9;
+
+@define-color magenta     #AC7BDE;
+@define-color lmagenta    #E5B0FF;
+
+
 window#waybar {
-    background-color: rgba(43, 48, 59, 1);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    background-color: @background;
+    border-bottom: 3px solid @lblack;
+    color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -41,7 +72,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: @foreground;
 }
 */
 
@@ -65,42 +96,42 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px @foreground;
 }
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: @yellow;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @foreground;
 }
 
 #workspaces button.empty {
     padding: 0 5px;
-    background-color: rgba(69, 72, 80, 1);
-    color: #ffffff;
+    background-color: @background;
+    color: @foreground;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: @black;
 }
 
 #workspaces button.focused, #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: @black;
+    box-shadow: inset 0 -3px @white;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: @lblack;
+    box-shadow: inset 0 -3px @white;
 }
 
 #clock,
@@ -121,7 +152,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: @white;
 }
 
 #window,
@@ -140,12 +171,13 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: @lblack;
+    color: @lwhite;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: @white;
+    color: @black;
 }
 
 #battery.charging, #battery.plugged {
@@ -195,16 +227,16 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @green;
+    color: @black;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: @magenta;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: @yellow;
 }
 
 #backlight {
@@ -261,7 +293,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: @blue;
 }
 
 #tray > .passive {
@@ -270,7 +302,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #idle_inhibitor {
@@ -300,8 +332,8 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
+    background: @cyan;
+    color: @magenta;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
@@ -337,7 +369,7 @@ label:focus {
 
 #privacy-item {
     padding: 0 5px;
-    color: white;
+    color: @white;
 }
 
 #privacy-item.screenshare {

@@ -16,7 +16,7 @@
 					family = "Iosevka";
 					style = "Italic";
 				};
-				size = 10;
+				size = 11;
 			};
 			selection.save_to_clipboard = false;
             window = {
@@ -24,7 +24,10 @@
 
             };
             cursor = {
-                shape = "beam";
+                style = {
+                    shape = "beam";
+                };
+                
             };
 
             # invisibone
@@ -34,8 +37,6 @@
                     foreground = "#A0A0A0";
                     background = "#232323";
                     dim_foreground = "#A0A0A0";
-                    dim_background = "#232323";
-
 
                 };
                 

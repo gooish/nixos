@@ -141,6 +141,17 @@
 
   programs.thunar.enable = true;
 
+  services.udev = {
+
+    packages = with pkgs; [
+      qmk
+      qmk-udev-rules # the only relevant
+      qmk_hid
+      via
+      vial
+    ]; # packages
+  }; # udev
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

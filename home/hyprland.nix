@@ -109,8 +109,8 @@
 
 				border_size = 2;
 
-				"col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-				"col.inactive_border" = "rgba(595959aa)";
+				"col.active_border" = "rgb(A8A8A8)";
+				"col.inactive_border" = "rgb(262626)";
 
 				# Set to true enable resizing windows by clicking and dragging on borders and gaps
 				resize_on_border = false;
@@ -306,12 +306,15 @@
 				"$mainMod SHIFT, 0, movetoworkspace, 10"
 
 				# Example special workspace (scratchpad)
-				"$mainMod, S, togglespecialworkspace, magic"
-				"$mainMod SHIFT, S, movetoworkspace, special:magic"
+				# "$mainMod, S, togglespecialworkspace, magic"
+				# "$mainMod SHIFT, S, movetoworkspace, special:magic"
 
 				# Scroll through existing workspaces with mainMod + scroll
 				", mouse:275, workspace, e-1"
 				", mouse:276, workspace, e+1"
+
+				#screenshot
+				"$mainMod SHIFT, S, exec, grim -g \"$(slurp)\" -t png - | wl-copy -t image/png"
 			];
 
 			# Move/resize windows with mainMod + LMB/RMB and dragging
@@ -348,6 +351,8 @@
 			windowrule = [
 				# Example windowrule
 				# "float,class:^(kitty)$,title:^(kitty)$"
+
+				"rounding 0, class:Rofi"
 
 				# Ignore maximize requests from apps. You'll probably like this.
 				"suppressevent maximize, class:.*"
