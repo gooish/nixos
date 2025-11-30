@@ -273,6 +273,8 @@
 
 				", F4, exec, $menu"
 
+				"$mainMod, L, exec, hyprlock"
+
 				# Move focus with mainMod + arrow keys
 				"$mainMod, left, movefocus, l"
 				"$mainMod, right, movefocus, r"

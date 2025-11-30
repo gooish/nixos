@@ -7,6 +7,7 @@
 		./home/hyprland.nix
 		./home/hyprlock.nix
 		# ./home/hyprpaper.nix
+		./home/alacritty.nix
 	];
 
 	home.username = "elli";
@@ -61,32 +62,14 @@
 
 		nwg-displays
 		gamescope
-	];
 
-	
-	
-	programs.alacritty = {
-		enable = true;
-		settings = {
-			env.term = "xterm-256color";
-			font = {
-				normal = {
-					family = "Iosevka";
-					style = "Regular";
-				};
-				bold = {
-					family = "Iosevka";
-					style = "Bold";
-				};
-				italic = {
-					family = "Iosevka";
-					style = "Italic";
-				};
-				size = 10;
-			};
-			selection.save_to_clipboard = true;
-		};
-	};
+		grim
+		slurp
+		wl-clipboard
+
+		swayidle
+
+	];
 
 	programs.bash = {
 		enable = true;
