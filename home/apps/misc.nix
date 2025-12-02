@@ -47,7 +47,6 @@
 		swayidle
 
 		clonehero
-		vesktop
 		xeyes
 	];
 }

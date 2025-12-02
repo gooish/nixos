@@ -6,7 +6,6 @@ let
 in
 {
   # ensure jq is available
-  home.packages = with pkgs; [ jq ];
 
   # copy the script into place and mark executable
   home.file.".config/hypr/scripts/cycle_workspace.sh".source = localScript;
