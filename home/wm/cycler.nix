@@ -2,7 +2,7 @@
 
 let
   # path to the script in your dotfiles repo (relative to the nix file)
-  localScript = ./resources/cycle_workspace.sh;
+  localScript = ../../resources/cycle_workspace.sh;
 in
 {
   # ensure jq is available
@@ -10,5 +10,5 @@ in
 
   # copy the script into place and mark executable
   home.file.".config/hypr/scripts/cycle_workspace.sh".source = localScript;
-  home.file.".config/hypr/scripts/cycle_workspace.sh".mode = "0755";
+  home.file.".config/hypr/scripts/cycle_workspace.sh".executable = true;
 }

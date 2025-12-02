@@ -7,10 +7,12 @@
 		./home/wm/hyprland.nix
 		./home/wm/hyprlock.nix
 		./home/wm/hypridle.nix
+		./home/wm/cycler.nix
 		# ./home/wm/hyprpaper.nix
 		./home/apps/alacritty.nix
 		./home/apps/misc.nix
 		./home/apps/bash.nix
+
 
 	];
 

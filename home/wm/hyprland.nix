@@ -305,8 +305,8 @@
 				# "$mainMod SHIFT, S, movetoworkspace, special:magic"
 
 				# Scroll through existing workspaces with mainMod + scroll
-				", mouse:275, workspace, e-1"
-				", mouse:276, workspace, e+1"
+				", mouse:275, exec, $HOME/.config/hypr/scripts/cycle_workspace.sh prev"
+				", mouse:276, exec, $HOME/.config/hypr/scripts/cycle_workspace.sh next"
 
 				#screenshot
 				"$mainMod SHIFT, S, exec, grim -g \"$(slurp)\" -t png - | wl-copy -t image/png"
