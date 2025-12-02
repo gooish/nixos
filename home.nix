@@ -3,12 +3,15 @@
 {
 
 	imports = [
-		./home/waybar.nix
-		./home/hyprland.nix
-		./home/hyprlock.nix
-		# ./home/hyprpaper.nix
-		./home/alacritty.nix
-		./home/hypridle.nix
+		./home/wm/waybar.nix
+		./home/wm/hyprland.nix
+		./home/wm/hyprlock.nix
+		./home/wm/hypridle.nix
+		# ./home/wm/hyprpaper.nix
+		./home/apps/alacritty.nix
+		./home/apps/misc.nix
+		./home/apps/bash.nix
+
 	];
 
 	home.username = "elli";
@@ -25,68 +28,8 @@
   		extraPortals = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-wlr ];
   		configPackages = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-wlr ];
 	};
-	
-	home.packages = with pkgs; [
-		neofetch
-		zip
-		xz
-		unzip
-		p7zip
 
-		jq
-		yt-dlp
 
-		dnsutils
-		nmap
-		
-		file
-		which
-		gnupg
-
-		btop
-
-		sysstat
-		lm_sensors
-		pciutils
-		usbutils
-		
-		vscode
-
-		swaybg
-
-		discord
-		telegram-desktop
-
-		pavucontrol
-
-		solaar
-
-		nwg-displays
-		gamescope
-
-		grim
-		slurp
-		wl-clipboard
-
-		swayidle
-
-		clonehero
-		vesktop
-		xeyes
-	];
-
-	programs.bash = {
-		enable = true;
-		enableCompletion = true;
-		shellAliases = {
-			mkcdir = "mkdir $_ && cd $_";
-		};
-		initExtra = ''
-			if uwsm check may-start && uwsm select; then
-				exec uwsm start default
-			fi
-		'';
-	};
 
 	home.stateVersion = "25.05";
 }
