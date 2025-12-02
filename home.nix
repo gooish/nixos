@@ -13,6 +13,7 @@
 		./home/apps/misc.nix
 		./home/apps/bash.nix
 		./home/apps/vesktop.nix
+		./home/apps/vesktop_theme.nix
 
 
 	];
