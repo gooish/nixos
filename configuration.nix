@@ -11,6 +11,19 @@
     #   ./hyprland.nix
     ];
 
+  fileSystems =
+  let
+    ntfs-drives = [
+      "/mnt/nvme1"
+    ];
+  in
+  lib.genAttrs ntfs-drives (path: {
+    options = [
+      "uid=1000" # REPLACE "$UID" WITH YOUR ACTUAL UID!
+      # "nofail"
+    ];
+  });
+
   nixpkgs.config.allowUnfree = true;
   security.sudo.wheelNeedsPassword = false;
 
@@ -104,10 +117,10 @@
     inter
     noto-fonts 
     noto-fonts-cjk-sans
-    noto-fonts-emoji 
+    noto-fonts-color-emoji 
     lato liberation_ttf 
     open-sans roboto 
-    ubuntu_font_family 
+    ubuntu-classic 
   ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
   
   programs.hyprland = {

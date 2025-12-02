@@ -10,12 +10,16 @@
 		enable = true;
 		systemd.enable = true;
 		settings = [{
-			height = 30;
+			height = 35;
 			spacing = 4;
 
 			modules-left = ["hyprland/workspaces"];
 			modules-center = ["hyprland/window"];
 			modules-right = [ "cpu" "clock" "tray"];
+            margin-top = 10;
+            margin-right = 10;
+            margin-left = 10;
+            margin-bottom = 0;
 		}];
 		style = ''
 * {
@@ -57,10 +61,12 @@
 
 window#waybar {
     background-color: @background;
+    background: @background;
     border-bottom: 3px solid @lblack;
     color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 10px;
 }
 
 window#waybar.hidden {
@@ -102,6 +108,10 @@ button:hover {
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
     background-color: @yellow;
+}
+
+#workspaces {
+    padding-left: 10px;
 }
 
 #workspaces button {
@@ -294,6 +304,8 @@ label:focus {
 
 #tray {
     background-color: @blue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px
 }
 
 #tray > .passive {

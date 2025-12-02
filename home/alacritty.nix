@@ -35,7 +35,7 @@
             colors = {
                 primary = {
                     foreground = "#A0A0A0";
-                    background = "#232323";
+                    background = "#262626";
                     dim_foreground = "#A0A0A0";
 
                 };

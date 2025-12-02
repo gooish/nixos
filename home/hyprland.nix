@@ -61,7 +61,7 @@
 			# ];
 
 			"exec-once" = [
-				"swaybg -i /home/elli/.nixos/resources/cats.png -m center -c e1ddd2"
+				"swaybg -i /home/elli/.nixos/resources/cats_invisibone.png -m center -c D0D0D0"
 			];
 
 			#############################
@@ -233,11 +233,6 @@
 				touchpad = {
 						natural_scroll = false;
 				};
-			};
-
-			# https://wiki.hypr.land/Configuring/Variables/#gestures
-			gestures = {
-				workspace_swipe = false;
 			};
 
 			# Example per-device config

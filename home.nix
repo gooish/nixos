@@ -8,6 +8,7 @@
 		./home/hyprlock.nix
 		# ./home/hyprpaper.nix
 		./home/alacritty.nix
+		./home/hypridle.nix
 	];
 
 	home.username = "elli";
@@ -69,6 +70,9 @@
 
 		swayidle
 
+		clonehero
+		vesktop
+		xeyes
 	];
 
 	programs.bash = {
