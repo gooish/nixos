@@ -4,5 +4,5 @@
         localScript = ../../resources/DiscordRecolor.Theme.css;
     in
     {
-        home.file.".config/vesktop/DiscordRecolor.Theme.css".source = localScript;
+        home.file.".config/vesktop/themes/DiscordRecolor.Theme.css".source = localScript;
     }
