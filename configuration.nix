@@ -9,7 +9,6 @@
     [ 
       ./hardware-configuration.nix
       ./system/audio.nix
-      ./system/filesystems.nix
       ./system/fonts.nix
       ./system/hyprland.nix
       ./system/network.nix
@@ -38,6 +37,19 @@
     font = "Lat2-Terminus16";
     keyMap = "fi";
   };
+
+  fileSystems =
+    let
+    ntfs-drives = [
+      "/mnt/nvme1"
+      ];
+    in
+    lib.genAttrs ntfs-drives (path: {
+        options = [
+            "uid=1000" # REPLACE "$UID" WITH YOUR ACTUAL UID!
+        # "nofail"
+        ];
+    });
 
   users.users.elli = {
     isNormalUser = true;
