@@ -1,3 +1,5 @@
+{ config, lib, pkgs, ... }:
+
 {
     services.udev = {
         packages = with pkgs; [

@@ -1,3 +1,6 @@
+{ config, lib, pkgs, ... }:
+
+
 {
     networking.hostName = "ten-of-swords"; # Define your hostname.
     # Pick only one of the below networking options.
