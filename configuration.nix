@@ -42,6 +42,7 @@
     let
     ntfs-drives = [
       "/mnt/nvme1"
+      "/mnt/nvme0"
       ];
     in
     lib.genAttrs ntfs-drives (path: {
