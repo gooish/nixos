@@ -13,6 +13,9 @@
   };
 
   outputs = inputs@{ nixpkgs, home-manager, chaotic, ...} : {
+		nixpkgs.overlays = [
+			(import ./overlays/shadps4-git.nix)
+		];
 		nixosConfigurations =  {
 			nixpkgs.config.allowUnfree = true;
 			ten-of-swords = nixpkgs.lib.nixosSystem {
