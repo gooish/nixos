@@ -17,6 +17,7 @@
       ./system/steam.nix
       ./system/udev.nix
       ./system/bluetooth.nix
+      ./system/appimage.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
