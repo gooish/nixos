@@ -9,6 +9,6 @@
         killall
         git
         rose-pine-hyprcursor
-        shadps4_git
+        # shadps4_git
     ];
 }
