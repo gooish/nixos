@@ -62,6 +62,7 @@
 
 			"exec-once" = [
 				"swaybg -i /home/elli/.nixos/resources/cats_invisibone.png -m center -c D0D0D0"
+				"dunst"
 			];
 
 			#############################
