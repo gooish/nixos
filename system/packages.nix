@@ -10,5 +10,7 @@
         git
         rose-pine-hyprcursor
         # shadps4_git
+        libnotify
+        glib
     ];
 }

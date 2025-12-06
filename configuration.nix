@@ -18,12 +18,16 @@
       ./system/udev.nix
       ./system/bluetooth.nix
       ./system/appimage.nix
+      ./system/notif.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
   security.sudo.wheelNeedsPassword = false;
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables = {
+    SDL_JOYSTICK_HIDAPI = "0";
+    NIXOS_OZONE_WL = "1";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
