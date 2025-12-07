@@ -48,5 +48,7 @@
 
 		clonehero
 		xeyes
+
+		obsidian
 	];
 }

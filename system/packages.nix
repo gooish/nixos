@@ -12,5 +12,6 @@
         # shadps4_git
         libnotify
         glib
+        cheese
     ];
 }
