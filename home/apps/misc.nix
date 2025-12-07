@@ -50,5 +50,7 @@
 		xeyes
 
 		obsidian
+
+		kdenlive
 	];
 }
