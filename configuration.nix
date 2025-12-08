@@ -19,6 +19,7 @@
       ./system/bluetooth.nix
       ./system/appimage.nix
       ./system/boot.nix
+      ./system/sshfs.nix
     ];
 
   nixpkgs.config.allowUnfree = true;

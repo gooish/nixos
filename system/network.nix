@@ -11,5 +11,6 @@
         ''
         192.168.8.130 home.ttpk.fi
         192.168.8.130 jellyfin.home.ttpk.fi
+        192.168.8.130 navi.home.ttpk.fi
         '';
 }
