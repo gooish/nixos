@@ -18,6 +18,7 @@
       ./system/udev.nix
       ./system/bluetooth.nix
       ./system/appimage.nix
+      ./system/boot.nix
     ];
 
   nixpkgs.config.allowUnfree = true;

@@ -51,6 +51,9 @@
 
 		obsidian
 
-		kdenlive
+		kdePackages.kdenlive
+
+		davinci-resolve
+		
 	];
 }
