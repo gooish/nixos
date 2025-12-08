@@ -24,4 +24,7 @@
         ];
         loader.timeout = 0;
     };
+    services.getty = {
+        autologinUser = "elli";
+    };
 }
