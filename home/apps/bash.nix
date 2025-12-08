@@ -6,8 +6,8 @@
 			mkcdir = "mkdir $_ && cd $_";
 		};
 		initExtra = ''
-			if uwsm check may-start && uwsm select; then
-				exec uwsm start hyprland
+			if uwsm check may-start; then
+				exec uwsm start default
 			fi
 		'';
 	};
