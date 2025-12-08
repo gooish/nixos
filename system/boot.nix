@@ -10,18 +10,18 @@
                     selected_themes = [ "red_loader" ];
                 })
             ];
-
-            consoleLogLevel = 3;
-            initrd.verbose = false;
-            kernelParams = [
-                "quiet"
-                "splash"
-                "boot.shell_on_fail"
-                "udev.log_priority=3"
-                "rd.systemd.show_status=auto"
-                "usbcore.autosuspend=-1"
-            ];
-            loader.timeout = 0;
         };
+
+        consoleLogLevel = 3;
+        initrd.verbose = false;
+        kernelParams = [
+            "quiet"
+            "splash"
+            "boot.shell_on_fail"
+            "udev.log_priority=3"
+            "rd.systemd.show_status=auto"
+            "usbcore.autosuspend=-1"
+        ];
+        loader.timeout = 0;
     };
 }
