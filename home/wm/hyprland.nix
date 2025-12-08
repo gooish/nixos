@@ -63,7 +63,8 @@
 			"exec-once" = [
 				"swaybg -i /home/elli/.nixos/resources/cats_invisibone.png -m center -c D0D0D0"
 				"dunst"
-				"hyprlock"
+				"vesktop"
+				"Telegram"
 			];
 
 			#############################
@@ -350,6 +351,9 @@
 				# "float,class:^(kitty)$,title:^(kitty)$"
 
 				"rounding 0, class:Rofi"
+
+				"workspace 7, class:org.telegram.desktop"
+				"workspace 7, class:vesktop"
 
 				# Ignore maximize requests from apps. You'll probably like this.
 				"suppressevent maximize, class:.*"
