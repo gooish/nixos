@@ -54,6 +54,7 @@
 		kdePackages.kdenlive
 
 		davinci-resolve
-		
+
+		feishin
 	];
 }

@@ -20,6 +20,7 @@
       ./system/appimage.nix
       ./system/boot.nix
       ./system/sshfs.nix
+      ./system/ssh.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
@@ -29,6 +30,9 @@
     SDL_JOYSTICK_HIDAPI = "0";
     NIXOS_OZONE_WL = "1";
   };
+
+  services.gvfs.enable = true;
+  services.gvfs.package = lib.mkForce pkgs.gnome.gvfs;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -72,6 +76,8 @@
 
 
   programs.thunar.enable = true;
+
+  
 
   system.stateVersion = "25.05"; # Did you read the comment?
 

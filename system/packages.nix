@@ -13,5 +13,7 @@
         libnotify
         glib
         cheese
+        lxqt.lxqt-policykit
+        cifs-utils
     ];
 }
