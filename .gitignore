@@ -1,2 +1,3 @@
 result
-smb-secret
+*smb-secret*
+smb_secret
