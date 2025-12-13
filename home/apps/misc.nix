@@ -56,5 +56,7 @@
 		davinci-resolve
 
 		feishin
+
+		mangohud
 	];
 }

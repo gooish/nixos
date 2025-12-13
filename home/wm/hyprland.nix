@@ -44,7 +44,7 @@
 
 			"$terminal" = "alacritty";
 			"$fileManager" = "dolphin";
-			"$menu" = "rofi -show run";
+			"$menu" = "rofi -show drun";
 
 
 			#################
