@@ -15,5 +15,6 @@
         cheese
         lxqt.lxqt-policykit
         cifs-utils
+        libsecret
     ];
 }
