@@ -19,7 +19,7 @@
       ./system/bluetooth.nix
       ./system/appimage.nix
       ./system/boot.nix
-      ./system/sshfs.nix
+      ./system/cifs.nix
       ./system/ssh.nix
     ];
 
