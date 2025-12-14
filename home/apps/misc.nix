@@ -58,5 +58,6 @@
 		feishin
 
 		mangohud
+		nicotine-plus
 	];
 }
