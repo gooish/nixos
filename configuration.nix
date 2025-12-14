@@ -21,6 +21,7 @@
       ./system/boot.nix
       ./system/cifs.nix
       ./system/ssh.nix
+      ./system/transmission.nix
     ];
 
   nixpkgs.config.allowUnfree = true;

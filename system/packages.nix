@@ -16,5 +16,6 @@
         lxqt.lxqt-policykit
         cifs-utils
         libsecret
+        transmission_4-gtk
     ];
 }
