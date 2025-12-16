@@ -21,6 +21,11 @@
 			selection.save_to_clipboard = false;
             window = {
                 dynamic_title = false;
+                padding = {
+                    x = 4;
+                    y = 4;
+                };
+                dynamic_padding = true;
 
             };
             cursor = {
