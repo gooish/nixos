@@ -17,5 +17,6 @@
         cifs-utils
         libsecret
         transmission_4-gtk
+        smtps
     ];
 }

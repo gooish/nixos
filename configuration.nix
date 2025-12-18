@@ -23,6 +23,7 @@
       ./system/ssh.nix
       ./system/transmission.nix
       ./system/gamemode.nix
+      ./system/smtps.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
