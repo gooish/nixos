@@ -16,7 +16,7 @@
 
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ...} : {
+  outputs = inputs@{ nixpkgs, home-manager, naviterm, ...} : {
 		nixosConfigurations =  {
 			nixpkgs.config.allowUnfree = true;
 			ten-of-swords = nixpkgs.lib.nixosSystem {
