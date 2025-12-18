@@ -17,6 +17,6 @@
         cifs-utils
         libsecret
         transmission_4-gtk
-        (callPackage ./packages/stmps {})
+        (callPackage ../packages/stmps {})
     ];
 }

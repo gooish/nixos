@@ -10,7 +10,7 @@
 let
   version = "0.0.5";
   pname = "stmps";
-  commit = "3748452234fb305f5c1c46501833723156a964e3";
+  commit = "4a8428bc06cc2490ff1caf7fc53fcacc5fc398c0";
   hash = "sha256-yR2foOt6sDShaLQ1dB4S9ni5sseItHxKBwTVvE5Em6g=";
 in
 
