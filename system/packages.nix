@@ -18,5 +18,6 @@
         libsecret
         transmission_4-gtk
         smtps
+        (callPackage ./packages/smtps {})
     ];
 }
