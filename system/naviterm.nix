@@ -1,5 +1,5 @@
-{pkgs, inputs, config, ...}: {
+{pkgs, config, ...}: {
   environment.systemPackages = [
-    inputs.naviterm.packages.${pkgs.system}.default
+    pkgs.naviterm
   ];
 }

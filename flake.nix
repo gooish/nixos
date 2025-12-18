@@ -28,6 +28,13 @@
 
 						home-manager.users.elli = import ./home.nix;
 					}
+					({ config, pkgs, ... }: {
+          				nixpkgs.overlays = [
+            			(final: prev: {
+              				naviterm = naviterm.packages.${prev.system}.default;
+            				})
+          				];
+        			})
 				];
 			};
     };  
