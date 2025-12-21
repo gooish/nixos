@@ -14,14 +14,44 @@
 			spacing = 4;
 
 			modules-left = ["hyprland/workspaces"];
-			modules-center = ["hyprland/window"];
+			modules-center = ["custom/previous" "custom/music" "custom/next"];
 			modules-right = [ "cpu" "clock" "tray"];
             margin-top = 10;
             margin-right = 10;
             margin-left = 10;
             margin-bottom = 0;
+
+            "custom/music" = {
+                format = "{}";
+                escape = true;
+                interval = 1;
+                tooltip = true;
+                exec = "playerctl metadata --format '{{ status }}: {{ artist }} - {{ title }}'";
+                on-click= "playerctl play-pause";
+                on-click-right = "playerctl next";
+                on-click-middle = "playerctl previous";
+                max-length = 100;
+            };
+
+            "custom/previous" = {
+                format = " ⏮ ";
+                on-click = "playerctl previous";
+            };
+
+            "custom/next" = {
+                format = " ⏭ ";
+                on-click = "playerctl next";
+            };
+
 		}];
+
+
+
+
+
 		style = ''
+
+    
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Iosevka, Roboto, Helvetica, Arial, sans-serif;

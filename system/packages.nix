@@ -17,6 +17,7 @@
         cifs-utils
         libsecret
         transmission_4-gtk
+        playerctl
         (callPackage ../packages/stmps {})
     ];
 }
