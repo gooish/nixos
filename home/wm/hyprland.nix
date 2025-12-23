@@ -162,6 +162,7 @@
 					"linear,0,0,1,1"
 					"almostLinear,0.5,0.5,0.75,1.0"
 					"quick,0.15,0,0.1,1"
+					"macOS,0.42,0,0.58,1"
 				];
 
 				animation = [
@@ -178,9 +179,9 @@
 					"layersOut, 1, 1.5, linear, fade"
 					"fadeLayersIn, 1, 1.79, almostLinear"
 					"fadeLayersOut, 1, 1.39, almostLinear"
-					"workspaces, 1, 1.94, almostLinear, fade"
-					"workspacesIn, 1, 1.21, almostLinear, fade"
-					"workspacesOut, 1, 1.94, almostLinear, fade"
+					"workspaces, 1, 4, macOS, slide"
+					"workspacesIn, 1, 4, macOS, slide"
+					"workspacesOut, 1, 4, macOS, slide"
 				];
 			};
 
