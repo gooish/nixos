@@ -179,9 +179,9 @@
 					"layersOut, 1, 1.5, linear, fade"
 					"fadeLayersIn, 1, 1.79, almostLinear"
 					"fadeLayersOut, 1, 1.39, almostLinear"
-					"workspaces, 1, 4, macOS, slide"
-					"workspacesIn, 1, 4, macOS, slide"
-					"workspacesOut, 1, 4, macOS, slide"
+					"workspaces, 1, 3, macOS, slide"
+					"workspacesIn, 1, 3, macOS, slide"
+					"workspacesOut, 1, 3, macOS, slide"
 				];
 			};
 
