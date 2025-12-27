@@ -15,6 +15,7 @@
 		./home/apps/bash.nix
 		./home/apps/vesktop.nix
 		./home/apps/vesktop_theme.nix
+		./home/apps/obs.nix
 
 
 	];
