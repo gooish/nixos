@@ -59,5 +59,7 @@
 
 		mangohud
 		nicotine-plus
+
+		prismlauncher
 	];
 }
