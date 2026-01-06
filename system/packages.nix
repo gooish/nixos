@@ -18,6 +18,7 @@
         libsecret
         transmission_4-gtk
         playerctl
+        xarchiver
         (callPackage ../packages/stmps {})
     ];
 }
