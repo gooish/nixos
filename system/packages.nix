@@ -19,6 +19,7 @@
         transmission_4-gtk
         playerctl
         xarchiver
+        protontricks
         (callPackage ../packages/stmps {})
     ];
 }
