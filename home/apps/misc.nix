@@ -61,5 +61,7 @@
 		nicotine-plus
 
 		prismlauncher
+
+		audacity
 	];
 }
