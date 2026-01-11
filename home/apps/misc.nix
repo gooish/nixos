@@ -63,5 +63,6 @@
 		prismlauncher
 
 		audacity
+		openmw
 	];
 }
