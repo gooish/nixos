@@ -13,7 +13,6 @@
         url = "gitlab:detoxify92/naviterm";
         inputs.nixpkgs.follows = "nixpkgs";
 	};
-
   };
 
   outputs = inputs@{ nixpkgs, home-manager, naviterm, ...} : {
