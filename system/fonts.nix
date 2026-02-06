@@ -12,7 +12,5 @@
     lato liberation_ttf 
     open-sans roboto 
     ubuntu-classic 
-    corefonts
-    vista-fonts
   ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 }
