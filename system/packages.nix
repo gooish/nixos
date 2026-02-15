@@ -20,6 +20,7 @@
         playerctl
         xarchiver
         protontricks
+        steamtinkerlaunch
         (callPackage ../packages/stmps {})
     ];
 }

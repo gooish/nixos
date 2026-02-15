@@ -351,16 +351,16 @@
 				# Example windowrule
 				# "float,class:^(kitty)$,title:^(kitty)$"
 
-				"rounding 0, class:Rofi"
+				"rounding 0, match:class Rofi"
 
-				"workspace 7, class:org.telegram.desktop"
-				"workspace 7, class:vesktop"
+				"workspace 7, match:class org.telegram.desktop"
+				"workspace 7, match:class vesktop"
 
 				# Ignore maximize requests from apps. You'll probably like this.
-				"suppressevent maximize, class:.*"
+				"suppress_event maximize, match:class .*"
 
 				# Fix some dragging issues with XWayland
-				"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+				"no_focus 1,match:class ^$,match:title ^$,match:xwayland 1,match:float 1, match:fullscreen 0,match:pin 0"
 			];
 
 			workspace = [
